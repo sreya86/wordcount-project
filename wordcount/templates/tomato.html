@@ -1,0 +1,10 @@
+<h1>Word Count</h1>
+<form action="{% url 'count' %}">
+    <!--Like this pattern should be given otherwise an error comes like 
+        there is no such page with tomato/count and also the same name refernce given to it,
+        should beused for pattern recognition.-->
+<textarea cols="40" rows="10" name="fulltext"></textarea>
+<br/>
+<input type="submit" value="Count!"/>
+<p>Want to know <a href="{% url 'about' %}">about us?</a></p>
+</form>

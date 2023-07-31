@@ -1,0 +1,18 @@
+<h1>There are {{c}} words in your text:</h1>
+{{fulltext}}
+<br/>
+<h2>WordCount:</h2>
+<p>a:using wordcountdict</p>
+{{wordcountdict}}
+<br/>
+{% for i in wordcountdict %}
+{{i}}
+<br/>
+{% endfor %}
+<p>b:using wordcountdict.items()</p>
+{% for i,j in wcd1 %}
+{{i}}-{{j}},
+{% endfor %}
+<p>c:swcd</p>
+{{swcd}}
+<a href="{% url 'tomato' %}">start again</a>
