@@ -1,5 +1,18 @@
+<html>
+    <head>
+<style>
+    footer{
+        position: fixed;
+        bottom: 0;
+        align-self: center;
+    }
+</style>
+</head>
+<body>
 <h1>About</h1>
-Hi! This is wordcount, a webiste created by sreya using django.
+<p><pre>Hi! This is wordcount, a webiste created by sreya using django.
 As she is interested to build a wordcount tool that counts with in seconds accurately...
-
-Copy right 2024
+</pre></p></body>
+<a href="{% url 'wordcount' %}">return to home</a>
+<footer>&copy; CopyRight {% now "Y" %}</footer>
+</html>
